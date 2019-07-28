@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto';
+}
+section {
+  padding: 3.5em 0;
+}
+.contact, .footer {
+  background: linear-gradient(129deg,rgba(242,47,70,.85),rgba(0,140,255,.85)),url(../img/bg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+.services, .clients {
+  background-color: #e8e8e8;
+  color: #d0d0d0;
+  -webkit-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.08);
+  -moz-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.08);
+  box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.08);
+  .col-md-4 {
+    h4 {
+      display: block;
+      margin: 45px 0;
+    }
+    .fas:not(.this-one) {
+      background: #d0d0d0;
+      border-radius: 99em;
+      padding: 15px;
+      color: white;
+    }
+    &:hover {
+      color: #737373;
+      .fas:not(.this-one) {
+        background: linear-gradient(129deg, rgba(135, 47, 242, 0.85), rgba(0,140,255,0.85));
+      }
+    }
+    .this-one {
+        color: #d0d0d0 !important;
+    }
+  }
+}
+.quote {
+  color: #737373;
+  font-size: 2em;
+  strong {
+    color: #535353;
+  }
+}
+.clients {
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+.maia-bar {
+  padding: 15px 0;
+  span {
+    display: table-cell;
+  }
+  h2 {
+    font-family: 'Lily Script One';
+    color: #4f4f4f;
+    margin-bottom: 2px;
+    .soft {
+      font-family: 'PT Sans';
+      font-size: 13px;
+      vertical-align: middle;
+      padding: 5px 0 0 8px;
+    }
+  }
+}
+.footer {
+  color: white;
+  .maia-bar {
+    h2 {
+      color: white;
+    }
+    span {
+      display: inline;
+    }
+    .soft {
+      padding: 5px 0 8px;
+    }
+  }
+  a {
+    color: white;
+    font-weight: bolder;
+  }
+}

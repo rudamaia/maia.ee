@@ -5,7 +5,7 @@ section {
   padding: 3.5em 0;
 }
 .contact, .footer {
-  background: linear-gradient(129deg,rgba(242,47,70,.85),rgba(0,140,255,.85)),url(../img/bg.png) 50% 50% no-repeat;
+  background: linear-gradient(129deg,rgba(242,47,70,.85),rgba(0,140,255,.85)),url(../img/bg.jpg) 50% 50% no-repeat;
   background-size: cover;
 }
 .services, .clients {
@@ -15,6 +15,26 @@ section {
   -moz-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.08);
   box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.08);
   .col-md-4 {
+    &:hover, a[aria-expanded="true"] {
+      color: #737373;
+      .fas:not(.this-one) {
+        background: linear-gradient(129deg, rgba(135, 47, 242, 0.85), rgba(0,140,255,0.85));
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #d0d0d0;
+      display: block;
+      &:hover {
+        color: #737373;
+      }
+    }
+    .collapse {
+      transition: color 0.2s linear;
+      &.show {
+        color: #737373;
+      }
+    }
     h4 {
       display: block;
       margin: 45px 0;
@@ -25,14 +45,8 @@ section {
       padding: 15px;
       color: white;
     }
-    &:hover {
-      color: #737373;
-      .fas:not(.this-one) {
-        background: linear-gradient(129deg, rgba(135, 47, 242, 0.85), rgba(0,140,255,0.85));
-      }
-    }
     .this-one {
-        color: #d0d0d0 !important;
+      color: #d0d0d0 !important;
     }
   }
 }
@@ -83,4 +97,5 @@ section {
     color: white;
     font-weight: bolder;
   }
+
 }

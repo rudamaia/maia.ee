@@ -50,11 +50,56 @@ section {
     }
   }
 }
-.quote {
+.quote, .drupal {
   color: #737373;
   font-size: 2em;
+  .team-intro {
+    font-size: 0.7em;
+    font-style: italic;
+    color: #acacac;
+  }
   strong {
     color: #535353;
+  }
+  .img-circle {
+    border-radius: 50%;
+  }
+  .staff {
+    hr {
+      max-width: 50px;
+      border-width: 3px;
+      border-color: #984ef4;
+    }
+    .media {
+      margin: 20px 0;
+      padding: 30px;
+    }
+    .badge {
+      font-size: 12px;
+      background-color: #008cff;
+      &:hover {
+        background-color: #984ef4;
+      }
+    }
+  }
+}
+.drupal {
+  background: #008cff;
+  color: rgba(255,255,255, 0.8);
+  b {
+    color: white;
+  }
+  .drupal-button {
+    &:hover {
+      text-decoration: none;
+      background: rgba(255,255,255,0.8);
+    }
+    background: white;
+    padding: 30px 10px 7px;
+    b {
+      color: #008cff;
+    }
+    border-radius: 20px;
   }
 }
 .clients {
